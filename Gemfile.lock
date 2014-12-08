@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    archive-tar-minitar (0.5.2)
+    rake (10.4.2)
+    rake-compiler (0.9.3)
+      rake
+    ruby_core_source (0.1.5)
+      archive-tar-minitar (>= 0.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake-compiler
+  ruby_core_source
