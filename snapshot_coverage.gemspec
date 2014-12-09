@@ -6,6 +6,8 @@ Gem::Specification.new do |s|
   s.description = "Add snapshot method to coverage lib"
   s.authors = ["Brian Dunn", "Chris Erin"]
   s.email = 'dev@hashrocket.com'
-  s.files = ['lib/snapshot_coverage.bundle']
+  s.extensions = %w[ext/snapshot_coverage/extconf.rb]
+  s.require_paths = %w[lib]
+  s.files = %x{git ls-files}.split("\n")
   s.add_development_dependency 'rake-compiler'
 end
